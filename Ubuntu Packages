@@ -25,6 +25,9 @@ List of Packages I need to install for any new system running Ubuntu that I will
 24. GParted
 25. Google Keep
 26. htop
+27. splint
+28. flake8
+29. pylint
 
 Extras
 1. GHCI
