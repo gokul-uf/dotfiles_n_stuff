@@ -1,0 +1,10 @@
+[user]
+	email = xxxxxxx@gmail.com
+	name = xxxxxx
+[credential]
+	helper = cache --timeout=72000
+[help]
+  autocorrect = -1
+[alias]
+  stat = status
+  com = commit
