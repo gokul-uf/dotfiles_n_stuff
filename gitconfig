@@ -8,3 +8,5 @@
 [alias]
   stat = status
   com = commit
+  br = branch
+  ck = checkout
