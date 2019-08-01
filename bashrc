@@ -120,23 +120,37 @@ export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
 export PATH=${CUDA_HOME}/bin:${PATH}
 
-alias python=python3
-alias pip=pip3
-
 export PATH=$PATH:~/.local/bin
-export PYTHONPATH="${PYTHONPATH}:/opt/movidius/caffe/python"
 
-alias yapf="yapf -i --style google"
-
-source /home/gokul/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+# TODO: don't forget to put in powerline imports
+# source /home/gokul/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 export TERM=xterm-256color
 
-# flags for OpenCV
-export CV_FLAGS=`pkg-config --cflags --libs opencv`
+# aliases
+
+DOUBLE_QUOTE='"'
+alias yapf="yapf -i --style google"
 
 alias g=git
 alias f8=flake8
 alias yf=yapf
 alias t=tmux
+alias f8="flake8 --max-line-length=88 --inline-quotes '$DOUBLE_QUOTE'"
+alias yf=yapf
+alias bl="black -l 88"
+alias pt="pytest"
+alias jc="jupyter console"
+alias jn="jupyter notebook"
+alias jl="jupyter lab"
+
+alias py2=python2
+alias pip=pip3
+
+alias python=python3
+alias pip=pip3
+
+# flags for OpenCV
+export CV_FLAGS=`pkg-config --cflags --libs opencv`
+
 
 export PATH=$PATH:$HOME/Thesis/gpu-hog
