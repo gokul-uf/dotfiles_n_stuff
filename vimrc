@@ -14,3 +14,6 @@ set background=dark
 setlocal spell
 
 set backspace=indent,eol,start
+
+set splitbelow
+set splitright
